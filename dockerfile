@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/dotnet/core/aspnet:2.1-nanoserver-1903 AS base
+FROM mcr.microsoft.com/dotnet/core/aspnet:2.1
 
 
 ENTRYPOINT ["dotnet", "DWeb.dll"]
