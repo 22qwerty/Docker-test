@@ -1,5 +1,11 @@
 FROM mcr.microsoft.com/dotnet/core/runtime-deps:2.1-bionic
 
-WORKDIR ~/web/Docker-test
 
-CMD ["dotnet", "~/web/Docker-test/DWeb.dll"]
+RUN md /usr/src/app
+
+WORKDIR /usr/src/app
+
+COPY . /usr/src/app
+
+CMD ["dotnet", "DWeb.dll"]
+
