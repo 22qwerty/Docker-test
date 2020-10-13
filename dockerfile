@@ -1,7 +1,7 @@
 FROM mcr.microsoft.com/dotnet/core/runtime-deps:2.1-bionic
 
 
-RUN md /usr/src/app
+RUN mkdir /usr/src/app
 
 WORKDIR /usr/src/app
 
